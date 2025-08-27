@@ -45,7 +45,10 @@ package.json
 
 ## App Screenshots
 HomeScreen
-<img width="200" height="300" alt="HomeScreen" src="https://github.com/user-attachments/assets/00f4e4c3-72e9-4d7f-b515-1713b350efeb" />
+
+<img width="1080" height="2400" alt="HomeScreen" src="https://github.com/user-attachments/assets/00f4e4c3-72e9-4d7f-b515-1713b350efeb" />
 
 SkillsScreen
-<img width="200" height="300" alt="Skills" src="https://github.com/user-attachments/assets/197fb7f0-8f09-4013-adaf-aa3b4065cd85" />
+
+<img width="1080" height="2400" alt="Skills" src="https://github.com/user-attachments/assets/197fb7f0-8f09-4013-adaf-aa3b4065cd85" />
+
