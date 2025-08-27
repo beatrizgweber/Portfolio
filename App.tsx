@@ -1,20 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { Routes } from "./src/routes";
+import { useFonts } from "expo-font";
+import { ActivityIndicator, Text } from "react-native";
+import {
+  Raleway_400Regular,
+  Raleway_700Bold,
+} from "@expo-google-fonts/raleway";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+  const [fontsLoaded] = useFonts({
+    RalewayRegular: Raleway_400Regular,
+    RalewayBold: Raleway_700Bold,
+  });
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  if (!fontsLoaded) {
+    return (
+      <ActivityIndicator
+        size="large"
+        style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
+      />
+    );
+  }
+  (Text as any).defaultProps = (Text as any).defaultProps || {};
+  (Text as any).defaultProps.style = { fontFamily: "RalewayRegular" };
+  return <Routes />;
+}
