@@ -30,7 +30,7 @@ export const skillsStyles = StyleSheet.create({
     marginHorizontal: 10,
   },
   skillBadge: {
-    backgroundColor: "#E07A5F",
+    backgroundColor: "#e07b5fc2",
     paddingVertical: 6,
     paddingHorizontal: 14,
     borderRadius: 20,
