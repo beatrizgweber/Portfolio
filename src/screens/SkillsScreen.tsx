@@ -6,6 +6,8 @@ export default function SkillsScreen() {
     "HTML",
     "CSS",
     "JavaScript",
+    "TypeScript",
+    "Bootstrap",
     "Python",
     "React",
     "React Native",
